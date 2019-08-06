@@ -1,0 +1,46 @@
+<div class="limiter">
+  <div class="container-login100">
+    <div class="wrap-login100">
+      <div class="login100-form-title">
+        <span class="login100-form-title-1">
+          Sign up
+        </span>
+      </div>
+      <form class="login100-form validate-form" #myform = "ngForm" (ngSubmit) = "onSubmit(myform)" >
+        <div class="wrap-input100 validate-input m-b-26" data-validate="First Name is required">
+          <span class="label-input100">First Name</span>
+          <label>
+            <input class="input100" type="text" name="firstName" placeholder="Enter first name" [(ngModel)]="firstName">
+          </label>
+          <span class="focus-input100"></span>
+        </div>
+        <div class="wrap-input100 validate-input m-b-18" data-validate="Last Name is required">
+          <span class="label-input100">Last Name</span>
+          <label>
+            <input class="input100" type="text" name="lastName" placeholder="Enter last name" [(ngModel)]="lastName">
+          </label>
+          <span class="focus-input100"></span>
+        </div>
+        <div class="wrap-input100 validate-input m-b-26" data-validate="Email is required">
+          <span class="label-input100">Email</span>
+          <label>
+            <input class="input100" type="email" name="email" placeholder="Enter email" [(ngModel)]="email">
+          </label>
+          <span class="focus-input100"></span>
+        </div>
+        <div class="wrap-input100 validate-input m-b-18" data-validate="Phone Number is required">
+          <span class="label-input100">Phone Number</span>
+          <label>
+            <input class="input100" type="text" name="phoneNumber" placeholder="Enter phone number" [(ngModel)]="phoneNumber">
+          </label>
+          <span class="focus-input100"></span>
+        </div>
+        <div class="container-login100-form-btn">
+          <button class="login100-form-btn" >
+            Register
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
